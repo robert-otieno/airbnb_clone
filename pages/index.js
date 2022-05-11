@@ -35,6 +35,7 @@ export default function Home({ exploreData, cardsData }) {
 
         <section>
           <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
+          
           {/* Pull data from a server */}
           <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
             {cardsData?.map(({ img, title }) => (
@@ -43,11 +44,7 @@ export default function Home({ exploreData, cardsData }) {
           </div>
         </section>
 
-        <LargeCard
-          img="https://links.papareact.com/4cj"
-          title="The Great Outdoors"
-          description="Wishlists curated by Airbnb"
-          buttonText="Get Inspired" />
+        <LargeCard img="https://links.papareact.com/4cj" title="The Great Outdoors" description="Wishlists curated by Airbnb" buttonText="Get Inspired" />
       </main>
 
       <Footer />
